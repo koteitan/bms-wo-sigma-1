@@ -162,7 +162,7 @@ The full design and proof are in [notes/01-design.md](notes/01-design.md) (in Ja
 | [notes/](notes/) | Design notes (in Japanese) |
 | [study/](study/en/README.md) | Notes on the mathematical background (in English and Japanese) |
 | [Audit.lean](Audit.lean) | The axiom audit. Not part of any `lean_lib` |
-| [LICENSE](LICENSE), [NOTICE](NOTICE) | CC BY-SA 4.0 and the record of origins |
+| [LICENSE](LICENSE) | CC BY-SA 4.0 |
 
 The files of `Por/`, in import order:
 
@@ -258,7 +258,7 @@ Every line prints output of the following form.
 
 ## License
 
-This repository is licensed under CC BY-SA 4.0 ([LICENSE](LICENSE)). [NOTICE](NOTICE) records the origins and the changes.
+This repository is licensed under CC BY-SA 4.0 ([LICENSE](LICENSE)).
 
 - `Bm4/`: copied from `lean/Bm4/` of [bms-elem-pattern](https://github.com/koteitan/bms-elem-pattern) (CC BY-SA 4.0). Its origin is [dh-bms-wf-formal](https://github.com/koteitan/dh-bms-wf-formal). It is ported from Lean 4.30.0 to 4.33.1. The only change of a proof is `col_pos` in `Bm4/Copy.lean`. Each file says so in its header.
 - `Por/`: made from `Por/` of [1y-wo-por](https://github.com/koteitan/1y-wo-por), whose helpers come from `lean/Pattern/` of bms-elem-pattern. The root index of 1-Y is removed, and the model is stated against the label interface `BM4.LabelSystem` of `Bm4/`. Each file names its sources in its header.
