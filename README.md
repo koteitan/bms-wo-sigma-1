@@ -140,6 +140,13 @@ R(k,x,y_i) \Rightarrow R(k,x,y'_i), \qquad R(k,y_i,y_j) \Rightarrow R(k,y'_i,y'_
 
 証明は選択公理と $`\omega_1`$ の正則性を使う。ラベルは $`\omega_1`$ より下の順序数である。順序数の上界や表記系は得られない。
 
+Carlson の構造 $`\mathcal R_N`$ については、順序数表記による解析がある。
+
+- $`\mathcal R_2`$ のどの有限の図式も、ある順序数 $`1^\infty`$ より下で実現される。$`1^\infty`$ はそういう順序数の最小である（Carlson と Wilken, 2012）。$`1^\infty`$ は $`\Pi^1_1\text{-}\mathrm{CA}_0`$ の証明論的順序数である（Wilken, 2021 の 1 節）。
+- $`\mathcal R_3`$ で最小の $`\lt_3`$ の組は、Wilken が順序数表記の中で求めた（Wilken, 2021 の arXiv 版 v1 の定理 4.3）。
+
+このリポジトリの $`R`$ が $`\mathcal R_N`$ と同じだとは主張しない。そのため、これらの結果はこの証明では使わない。
+
 詳しい設計と証明は [notes/01-design.md](notes/01-design.md) にある（日本語）。
 
 ## 数学の解説
@@ -236,13 +243,17 @@ lake env lean Audit.lean
 
 ## 参考文献
 
+- Bashicu, 「BASIC言語による巨大数のまとめ」, 巨大数研究 Wiki. [ページ](https://googology.fandom.com/ja/wiki/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%96%E3%83%AD%E3%82%B0%3ABashicuHyudora/BASIC%E8%A8%80%E8%AA%9E%E3%81%AB%E3%82%88%E3%82%8B%E5%B7%A8%E5%A4%A7%E6%95%B0%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81#%E3%83%90%E3%82%B7%E3%82%AF%E8%A1%8C%E5%88%97%E6%95%B0%28Bashicu_matrix_number%29)。バシク行列システムの定義。
 - DH, 「Bashicu Matrix System ver. 4 の停止性と展開関係の整礎性」, 巨大数研究 Wiki (2026). [論文 PDF](https://googology.fandom.com/ja/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%3ABM4%28%E4%BD%9C%E6%88%90%E8%80%85%E6%83%85%E5%A0%B1%E4%BB%98%E3%81%8D%29.pdf), [発表のブログ記事](https://googology.fandom.com/ja/wiki/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%96%E3%83%AD%E3%82%B0%3ADeltaEta22223/BM4%E3%81%AE%E5%81%9C%E6%AD%A2%E6%80%A7%E8%A8%BC%E6%98%8E)
 - R. Hunter, "Well-Orderedness of the Bashicu Matrix System", arXiv:2307.04606 (2023). [arXiv](https://arxiv.org/abs/2307.04606)
 - T. J. Carlson, "Elementary Patterns of Resemblance", Annals of Pure and Applied Logic 108 (2001), 19–77.
+- T. J. Carlson and G. Wilken, "Tracking chains of Σ2-elementarity", Annals of Pure and Applied Logic 163 (2012), 23–67. [DOI](https://doi.org/10.1016/j.apal.2011.08.003)
+- G. Wilken, "Pure Σ2-elementarity beyond the core", Annals of Pure and Applied Logic 172 (2021), 103001. [DOI](https://doi.org/10.1016/j.apal.2021.103001)、[arXiv 版 v1 (2017)](https://arxiv.org/abs/1710.01870v1)、[arXiv 版 v5](https://arxiv.org/abs/1710.01870v5)
 - koteitan, [dh-bms-wf-formal](https://github.com/koteitan/dh-bms-wf-formal). DH の証明の Lean 4 による形式化。`Bm4/` の元。
 - koteitan, [bms-elem-pattern](https://github.com/koteitan/bms-elem-pattern). patterns of resemblance（$`\Sigma_n`$ 初等性）による BMS の停止性。`Bm4/` はここから写した。
-- koteitan, [1y-wo-por](https://github.com/koteitan/1y-wo-por). $`\Sigma_1`$ 初等性だけによる 1-Y の整礎性。`Por/` の元。
 - Phyrion, [1Y-Well-Ordering-Lean](https://github.com/Phyrion1343/1Y-Well-Ordering-Lean). 1-Y の整礎性の Lean の形式化。
+- Phyrion, [omega-Y-Well-Ordering-Lean](https://github.com/Phyrion1343/omega-Y-Well-Ordering-Lean). weak-magma ω-Y の整礎性の Lean の形式化。
+- koteitan, [1y-wo-por](https://github.com/koteitan/1y-wo-por). $`\Sigma_1`$ 初等性だけによる 1-Y の整礎性。`Por/` の元。
 - The mathlib Community, [Mathlib](https://github.com/leanprover-community/mathlib4).
 
 ## ライセンス

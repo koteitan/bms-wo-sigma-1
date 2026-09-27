@@ -140,6 +140,13 @@ The initial label comes from a chain $`c_0 \lt c_1 \lt \cdots`$ of closure point
 
 The proof uses the axiom of choice and the regularity of $`\omega_1`$. The labels are ordinals below $`\omega_1`$. No ordinal bound and no notation system is obtained.
 
+For Carlson's structures $`\mathcal R_N`$ there is an analysis by ordinal notations.
+
+- Every finite pattern of $`\mathcal R_2`$ is realized below an ordinal $`1^\infty`$, and $`1^\infty`$ is the least such ordinal (Carlson and Wilken, 2012). $`1^\infty`$ is the proof-theoretic ordinal of $`\Pi^1_1\text{-}\mathrm{CA}_0`$ (Wilken, 2021, Section 1).
+- Wilken determined the least $`\lt_3`$-pair of $`\mathcal R_3`$ inside an ordinal notation system (Wilken, 2021, arXiv version v1, Theorem 4.3).
+
+We do not claim that the relation $`R`$ of this repository equals $`\mathcal R_N`$. So these results are not used in this proof.
+
 The full design and proof are in [notes/01-design.md](notes/01-design.md) (in Japanese).
 
 ## Mathematical background
@@ -236,13 +243,17 @@ Every line prints output of the following form.
 
 ## References
 
+- Bashicu, "BASIC言語による巨大数のまとめ" (a summary of large numbers in BASIC), Googology Wiki (Japanese). [page](https://googology.fandom.com/ja/wiki/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%96%E3%83%AD%E3%82%B0%3ABashicuHyudora/BASIC%E8%A8%80%E8%AA%9E%E3%81%AB%E3%82%88%E3%82%8B%E5%B7%A8%E5%A4%A7%E6%95%B0%E3%81%AE%E3%81%BE%E3%81%A8%E3%82%81#%E3%83%90%E3%82%B7%E3%82%AF%E8%A1%8C%E5%88%97%E6%95%B0%28Bashicu_matrix_number%29). The definition of the Bashicu Matrix System.
 - DH, "Bashicu Matrix System ver. 4 の停止性と展開関係の整礎性" (termination of BM4 and well-foundedness of its expansion relation), Googology Wiki (Japanese) (2026). [paper PDF](https://googology.fandom.com/ja/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%3ABM4%28%E4%BD%9C%E6%88%90%E8%80%85%E6%83%85%E5%A0%B1%E4%BB%98%E3%81%8D%29.pdf), [announcement blog post](https://googology.fandom.com/ja/wiki/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%83%96%E3%83%AD%E3%82%B0%3ADeltaEta22223/BM4%E3%81%AE%E5%81%9C%E6%AD%A2%E6%80%A7%E8%A8%BC%E6%98%8E)
 - R. Hunter, "Well-Orderedness of the Bashicu Matrix System", arXiv:2307.04606 (2023). [arXiv](https://arxiv.org/abs/2307.04606)
 - T. J. Carlson, "Elementary Patterns of Resemblance", Annals of Pure and Applied Logic 108 (2001), 19–77.
+- T. J. Carlson and G. Wilken, "Tracking chains of Σ2-elementarity", Annals of Pure and Applied Logic 163 (2012), 23–67. [DOI](https://doi.org/10.1016/j.apal.2011.08.003)
+- G. Wilken, "Pure Σ2-elementarity beyond the core", Annals of Pure and Applied Logic 172 (2021), 103001. [DOI](https://doi.org/10.1016/j.apal.2021.103001), [arXiv version v1 (2017)](https://arxiv.org/abs/1710.01870v1), [arXiv version v5](https://arxiv.org/abs/1710.01870v5)
 - koteitan, [dh-bms-wf-formal](https://github.com/koteitan/dh-bms-wf-formal). A Lean 4 formalization of DH's proof. The origin of `Bm4/`.
 - koteitan, [bms-elem-pattern](https://github.com/koteitan/bms-elem-pattern). Termination of BMS by patterns of resemblance ($`\Sigma_n`$-elementarity). `Bm4/` is copied from here.
-- koteitan, [1y-wo-por](https://github.com/koteitan/1y-wo-por). Well-foundedness of 1-Y by $`\Sigma_1`$-elementarity alone. The origin of `Por/`.
 - Phyrion, [1Y-Well-Ordering-Lean](https://github.com/Phyrion1343/1Y-Well-Ordering-Lean). A Lean formalization of the well-foundedness of 1-Y.
+- Phyrion, [omega-Y-Well-Ordering-Lean](https://github.com/Phyrion1343/omega-Y-Well-Ordering-Lean). A Lean formalization of the well-foundedness of weak-magma ω-Y.
+- koteitan, [1y-wo-por](https://github.com/koteitan/1y-wo-por). Well-foundedness of 1-Y by $`\Sigma_1`$-elementarity alone. The origin of `Por/`.
 - The mathlib Community, [Mathlib](https://github.com/leanprover-community/mathlib4).
 
 ## License
