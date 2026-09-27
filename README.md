@@ -262,4 +262,3 @@ lake env lean Audit.lean
 
 - `Bm4/`：[bms-elem-pattern](https://github.com/koteitan/bms-elem-pattern) の `lean/Bm4/`（CC BY-SA 4.0）を写したものである。元は [dh-bms-wf-formal](https://github.com/koteitan/dh-bms-wf-formal) である。Lean 4.30.0 から 4.33.1 に移した。証明を変えたのは `Bm4/Copy.lean` の `col_pos` だけである。各ファイルの先頭にそのことを書いてある。
 - `Por/`：[1y-wo-por](https://github.com/koteitan/1y-wo-por) の `Por/` から作った。その補助は bms-elem-pattern の `lean/Pattern/` から来ている。1-Y の根の添字を外し、`Bm4/` のラベルの約束 `BM4.LabelSystem` に合わせた。各ファイルの先頭に元を書いてある。
-- どのコードも同じ著作者（koteitan）による。ライセンスの無いプロジェクトのコードは、写しても翻案してもいない。
